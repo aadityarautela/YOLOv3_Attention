@@ -1,4 +1,4 @@
 classes=5
-train=./data/WiderPerson
-valid=./data/WiderPerson
+train=./data/WiderPerson/images/train
+valid=./data/WiderPerson/images/validation
 names=data/widerperson.names
