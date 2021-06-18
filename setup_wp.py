@@ -115,11 +115,11 @@ for validation_label_path in validation_labels_path_list:
 # for i, x in enumerate(validation_imgs_path_list):
 #     if i < 3:
 #         print(x)
-train_imgs_path_list_write = [x + '\n' for x in train_imgs_path_list]
+train_imgs_path_list_write = ['./images/train/' + x + '.jpg\n' for x in train_imgs_list]
 with open(train_txt_write_path, 'w') as f:
     f.writelines(train_imgs_path_list_write)
 
 
-validation_imgs_path_list_write = [x + '\n' for x in validation_imgs_path_list]
+validation_imgs_path_list_write = ['./images/validation/' + x + '\n' for x in validation_imgs_path_list]
 with open(validation_txt_write_path, 'w') as f:
     f.writelines(validation_imgs_path_list_write)
