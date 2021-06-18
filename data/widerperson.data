@@ -1,0 +1,4 @@
+classes=5
+train=./data/WiderPerson
+valid=./data/WiderPerson
+names=data/widerperson.names
