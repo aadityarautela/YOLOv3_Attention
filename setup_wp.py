@@ -51,7 +51,7 @@ for train_label_path in train_labels_path_list:
         y1 = int(y1)
         x2 = int(x2)
         y2 = int(y2)
-        yolo_label = str(wp_label-1)
+        yolo_label = str(wp_label)
         xc = str((x2+x1)/(2*w))
         yc = str((y2+y1)/(2*h))
         yolo_width = str((x2-x1)/w)
