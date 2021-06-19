@@ -46,7 +46,7 @@ for train_label_path in train_labels_path_list:
 
     for line in train_label_lines:
         wp_label, x1, y1, x2, y2 = line.split()
-        wp_label = int(wp_label)
+        wp_label = int(wp_label-1)
         x1 = int(x1)
         y1 = int(y1)
         x2 = int(x2)
@@ -98,7 +98,7 @@ for validation_label_path in validation_labels_path_list:
         y1 = int(y1)
         x2 = int(x2)
         y2 = int(y2)
-        yolo_label = str(wp_label)
+        yolo_label = str(wp_label-1)
         xc = str((x2+x1)/(2*w))
         yc = str((y2+y1)/(2*h))
         yolo_width = str((x2-x1)/w)
